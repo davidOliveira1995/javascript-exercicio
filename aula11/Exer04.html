@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const primeiraNota = Number(prompt("Nota do 1° Semestre: "));
+      const segundaNota = Number(prompt("Nota do 2° Semestre: "));
+      const terceiraNota = Number(prompt("Nota do 3° Semestre: "));
+      const quartaNota = Number(prompt("Nota do 4° Semestre: "));
+
+      const media =
+        (primeiraNota + segundaNota + terceiraNota + quartaNota) / 4;
+
+      document.write(`Média: ${media}`);
+    </script>
+  </body>
+</html>

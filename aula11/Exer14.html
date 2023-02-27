@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <script>
+    const valorHora = Number(prompt("Valor hora: "))
+    const horasTrabalhadas = Number(prompt("Horas trabalhadas: "))
+
+    const salarioBruto = horasTrabalhadas * valorHora
+
+    const impostoRenda = (salarioBruto / 100) * 11
+    const inss = (salarioBruto / 100) * 8
+    const sindicato = (salarioBruto / 100) * 5
+    const descontos = impostoRenda + inss + sindicato
+
+    const salarioLiquido = salarioBruto - descontos
+
+    document.write(`Salário Bruto: R$ ${salarioBruto}<br>`)
+    document.write(`Imposto de renda: R$ ${impostoRenda}<br>`)
+    document.write(`INSS: R$ ${inss}<br>`)
+    document.write(`Sindicato: R$ ${sindicato}<br>`)
+    document.write(`Total descontos: R$ ${descontos}<br>`)
+    document.write(`Salário Liquido: R$ ${salarioLiquido}`)
+
+  </script>
+  
+</body>
+</html>

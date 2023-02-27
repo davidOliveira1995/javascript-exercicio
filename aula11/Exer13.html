@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const pesoMercadoria = Number(prompt("Peso da mercadoria: "))
+      const excesso = pesoMercadoria - 50;
+      let multa = 0;
+
+      if(pesoMercadoria > 50) {
+        multa = (pesoMercadoria - 50) * 4;
+      }
+
+      document.write(`Peso: ${pesoMercadoria} KG, Excesso: ${excesso} KG, Valor Multa: R$ ${multa}`)
+
+    </script>
+  </body>
+</html>
