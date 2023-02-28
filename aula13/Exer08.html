@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const produtoUm = Number(prompt("Tv 49 Polegadas Phillips: R$ "));
+      const produtoDois = Number(prompt("Tv 40 Polegadas CCE: R$ "));
+      const produtoTres = Number(prompt("Tv 50 Polegadas Samsung: R$ "));
+
+      if (produtoUm < produtoDois && produtoUm < produtoTres) {
+        document.write(`Tv 49 Polegadas Phillips: R$ ${produtoUm}`);
+      } else if (produtoDois < produtoUm && produtoDois < produtoTres) {
+        document.write(`Tv 40 Polegadas CCE: R$ ${produtoDois}`);
+      } else if (produtoTres < produtoUm && produtoTres < produtoDois) {
+        document.write(`Tv 50 Polegadas Samsung: R$ ${produtoTres}`);
+      }
+    </script>
+  </body>
+</html>

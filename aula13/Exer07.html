@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const primeiroNumero = Number(prompt("Digite: 1° número"));
+      const segundoNumero = Number(prompt("Digite: 2° número"));
+      const terceiroNumero = Number(prompt("Digite: 3° número"));
+
+      if (primeiroNumero > terceiroNumero && terceiroNumero > segundoNumero) {
+        document.write(
+          `O maior: 1° ${primeiroNumero}, o menor: 2° ${segundoNumero}`
+        );
+      } else if (
+        primeiroNumero > segundoNumero &&
+        segundoNumero > terceiroNumero
+      ) {
+        document.write(
+          `O maior: 1° ${primeiroNumero}, o menor: 3° ${terceiroNumero}`
+        );
+      } else if (
+        segundoNumero > terceiroNumero &&
+        terceiroNumero > primeiroNumero
+      ) {
+        document.write(
+          `O maior: 2° ${segundoNumero}, o menor: 1° ${primeiroNumero}`
+        );
+      } else if (
+        segundoNumero > primeiroNumero &&
+        primeiroNumero > terceiroNumero
+      ) {
+        document.write(
+          `O maior: 2° ${segundoNumero}, o menor: 3° ${terceiroNumero}`
+        );
+      } else if (
+        terceiroNumero > primeiroNumero &&
+        primeiroNumero > segundoNumero
+      ) {
+        document.write(
+          `O maior: 3° ${terceiroNumero}, o menor: 2° ${segundoNumero}`
+        );
+      } else if (
+        terceiroNumero > segundoNumero &&
+        segundoNumero > primeiroNumero
+      ) {
+        document.write(
+          `O maior: 3° ${terceiroNumero}, o menor: 1° ${primeiroNumero}`
+        );
+      }
+    </script>
+  </body>
+</html>

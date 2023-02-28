@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const primeiroNumero = Number(prompt("Digite: 1° Número: "));
+      const segundoNumero = Number(prompt("Digite: 2° Número: "));
+      const terceiroNumero = Number(prompt("Digite 3° Número: "));
+
+      if (primeiroNumero > segundoNumero && primeiroNumero > terceiroNumero) {
+        document.write(`O maior é: ${primeiroNumero}`);
+      } else if (
+        segundoNumero > primeiroNumero &&
+        segundoNumero > terceiroNumero
+      ) {
+        document.write(`O maior é: ${segundoNumero}`);
+      } else if (
+        terceiroNumero > primeiroNumero &&
+        terceiroNumero > segundoNumero
+      ) {
+        document.write(`O maior é: ${terceiroNumero}`);
+      }
+    </script>
+  </body>
+</html>
